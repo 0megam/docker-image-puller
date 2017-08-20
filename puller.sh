@@ -1,5 +1,5 @@
 #!/bin/bash
-for image in $(cat containers.txt); do
+for image in $(cat images.txt); do
 	docker pull $image
 	archive=${image////%}
 	archive=${archive/:/@}
